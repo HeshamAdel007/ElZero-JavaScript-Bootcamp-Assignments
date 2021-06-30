@@ -2,19 +2,20 @@
 
 let string = "Elzero";
 
-console.log(string[0].toLowerCase()); // e
+document.write(string[0].toLowerCase(), "<br>"); // e
 
-console.log(string.charAt(0).toLowerCase()); // e
+document.write(string.charAt(0).toLowerCase(), "<br>"); // e
 
-console.log(string.charAt(string.indexOf("e")).toLowerCase()); // e
+document.write(string.charAt(string.indexOf("e")).toLowerCase(), "<br>"); // e
 
-console.log(string.charAt(string.lastIndexOf("e")).toLowerCase()); // e
+document.write(string.charAt(string.lastIndexOf("e")).toLowerCase(), "<br>"); // e
 
-console.log(string.slice(3, 4).toLowerCase()); // e
+document.write(string.slice(3, 4).toLowerCase(), "<br>"); // e
 
-console.log(string.slice(-3, -2).repeat(3).toLowerCase()); // eee
+document.write(string.slice(-3, -2).repeat(3).toLowerCase()); // eee
 
 
+document.write("<hr/>")
 
 
 // Task 2
@@ -23,9 +24,9 @@ let letterZ = "z";
 let letterE = "e";
 let letterO = "O";
 
-console.log(word.toLowerCase().includes(letterZ)); // True
+document.write(word.toLowerCase().includes(letterZ), "<br>"); // True
 
-console.log(word.toLowerCase().startsWith(letterE)); // True
+document.write(word.toLowerCase().startsWith(letterE), "<br>"); // True
 
-console.log(word.toUpperCase().endsWith(letterO)); // True
+document.write(word.toUpperCase().endsWith(letterO)); // True
 

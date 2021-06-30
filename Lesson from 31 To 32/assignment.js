@@ -1,39 +1,41 @@
 // Task 1
 
-console.log(100 == "100"); // true
+document.write(100 == "100", "<br>"); // true
 
-console.log(100 !== 1000); // true
+document.write(100 !== 1000, "<br>"); // true
 
-console.log(110 > 100 > 10 < 20); // true
+document.write(110 > 100 > 10 < 20, "<br>"); // true
 
-console.log(-10 == "-10"); // true
+document.write(-10 == "-10", "<br>"); // true
 
-console.log(typeof -50 === typeof +"-40"); // true
+document.write(typeof -50 === typeof +"-40", "<br>"); // true
 
-console.log(typeof 10 == typeof -"-40"); // true
+document.write(typeof 10 == typeof -"-40", "<br>"); // true
 
-console.log(typeof "10" !== typeof 10); // true
+document.write(typeof "10" !== typeof 10, "<br>"); // true
 
-console.log(typeof 20 != false); // true
+document.write(typeof 20 != false, "<br>"); // true
 
+document.write("<hr/>")
 
 // Task 2
 
 let num1 = 10;
 let num2 = 20;
 
-console.log(num1 < num2); // true
+document.write(num1 < num2, "<br>"); // true
 
-console.log(num1 <= num2); // true
+document.write(num1 <= num2, "<br>"); // true
 
-console.log(num2 > num1); // true
+document.write(num2 > num1, "<br>"); // true
 
-console.log(num2 >= num1); // true
+document.write(num2 >= num1, "<br>"); // true
 
-console.log(num1 !== num2); // true
+document.write(num1 !== num2, "<br>"); // true
 
-console.log(num1 != num2); // true
+document.write(num1 != num2, "<br>"); // true
 
+document.write("<hr/>")
 
 // Task 3
 
@@ -41,9 +43,9 @@ let a = 20;
 let b = 30;
 let c = 10;
 
-console.log((a < b && a > c) || a > b); // true
+document.write((a < b && a > c) || a > b, "<br>"); // true
 
-console.log(a < b || a <= c); // true
+document.write(a < b || a <= c, "<br>"); // true
 
-console.log(!(a > b) && !(a >= b) && !(a < c) && !(a <= c)); // true
+document.write(!(a > b) && !(a >= b) && !(a < c) && !(a <= c), "<br>"); // true
 

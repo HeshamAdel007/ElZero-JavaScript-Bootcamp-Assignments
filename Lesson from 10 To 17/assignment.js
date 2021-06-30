@@ -12,53 +12,58 @@ console.log(div);
 document.write(div.repeat(4));
 
 
+document.write("<hr/>")
 
 // Task 1
 let NumberOne = 10;
 let NumberTwo = 20;
 
-console.log(NumberOne + "" + NumberTwo); // Normal Concatenate => 1020
-console.log(typeof "NumberOne+NumberTwo"); // Normal Concatenate => String
-console.log(`${NumberOne}${NumberTwo}`); // Template Literals Way => 1020
-console.log(typeof `${NumberOne}${NumberTwo}`); // Template Literals Way => String
+document.write(NumberOne + "" + NumberTwo, "<br>"); // Normal Concatenate => 1020
+document.write(typeof "NumberOne+NumberTwo", "<br>"); // Normal Concatenate => String
+document.write(`${NumberOne}${NumberTwo}`, "<br>"); // Template Literals Way => 1020
+document.write(typeof `${NumberOne}${NumberTwo}`, "<br>"); // Template Literals Way => String
 
 /*
     Normal Concatenate
     20
     10
 */
-console.log(NumberTwo + "\n" + NumberOne);
+document.write(NumberTwo + "\n" + NumberOne, "<br>");
 
 /*
     Template Literals Way
     20
     10
 */
-console.log(`${NumberTwo}\n${NumberOne}`);
+document.write(`${NumberTwo}\n${NumberOne}`);
 
 
 
+document.write("<hr/>")
 
 // Task 2
 
-console.log(elzero.innerHTML); // object
-console.log(typeof elzero); // object
+document.write(elzero.innerHTML, "<br>"); // object
+document.write(typeof elzero); // object
 
 
 
 
+document.write("<hr/>")
 
 // Task 3
 
-console.log(
+document.write(
     '`I\'m In\n\\\\\nlove\\\\""" \'\'\'\n++ With ++\n\\"""\\"""\n""JavaScript""``'
 );
 
 
 
+document.write("<hr/>")
 
 // Task 4
+
 let a = 10;
 let b = 20;
 let year = `_${b}${b + a / a}`;
-console.log(`_${b + a / a}${year.repeat(3)}_${b}_`); // _21_2021_2021_2021_20_
+document.write(`_${b + a / a}${year.repeat(3)}_${b}_`); // _21_2021_2021_2021_20_
