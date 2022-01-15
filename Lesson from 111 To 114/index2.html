@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson from 111 To 114</title>
+        
+    </head>
+    <body>
+        <form>
+            <div>
+              <label>Please insert your name</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>Please insert your email</label>
+              <input type="email" />
+            </div>
+            <div>
+              <label>Please insert your favourite number</label>
+              <input type="number" />
+            </div>
+            <div>
+              <label>Please insert your favourite color</label>
+              <select>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Black">Black</option>
+              </select>
+            </div>
+        </form>
+        <script type="text/javascript">
+          const inputs = document.querySelectorAll("input");
+          const sel = document.querySelector("select");
+          const opts = document.querySelectorAll("option");
+
+          const optSelect = function () {
+            if (sessionStorage.selected) {
+              document
+                .querySelector(`[value="${sessionStorage.selected}"]`)
+                .setAttribute("selected", "");
+            }
+          };
+
+          if (sessionStorage.length) {
+            inputs.forEach(
+              input =>
+                (document.querySelector(`[type="${input.type}"]`).value =
+                  sessionStorage.getItem(input.type))
+            );
+            optSelect();
+          }
+
+          inputs.forEach(
+            input =>
+              (input.oninput = function () {
+                sessionStorage.setItem(input.type, input.value);
+              })
+          );
+
+          sel.onchange = function () {
+            sessionStorage.selected = sel.value;
+            opts.forEach(opt => opt.removeAttribute("selected"));
+            optSelect();
+          };
+
+        </script>
+    </body>
+</html>
+

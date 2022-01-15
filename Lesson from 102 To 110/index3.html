@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson from 102 To 110</title>
+        
+    </head>
+    <body>
+        <script type="text/javascript">
+
+          const div = document.createElement("div");
+
+          const counter = setInterval(countdown, 1000);
+
+          let num = 10;
+          div.textContent = `${num}`;
+          document.body.append(div);
+
+          function countdown() {
+            num--;
+            div.textContent = `${num}`;
+            if (num === 5)
+              open(
+                "https://elzero.org/",
+                "_blank",
+                "width=400,height=400,top=200,left=400"
+              );
+            if (!num) clearInterval(counter);
+          }
+        </script>
+    </body>
+</html>
+

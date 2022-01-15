@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lesson from 94 To 101</title>
+    <script>
+      window.onload = function () {
+        [...document.links]
+          .filter
+          (l => l.classList.contains("open") && l.textContent === "Elzero")[0]
+          .click();
+                for (let i = 0; i < document.links.length; i++) {
+          let link = document.links[i];
+          if (link.classList.contains("open") && link.textContent === "Elzero")
+            link.click();
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <a class="open" href="https://google.com">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+  </body>
+</html>
